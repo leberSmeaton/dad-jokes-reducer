@@ -4,7 +4,7 @@ export const Heading = styled.h1 `
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 2.5em;
 	display: block;
-	margin: 1em;
+	margin: 0;
 	padding: 20px 0;
 	text-align: center;
 `
@@ -19,9 +19,9 @@ export const Card = styled.div `
 	justify-content: center;
 	align-items: center;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 1em;
 	padding: 30px 25px;
-	height: 80px;
+	height: 4em;
 	width: 60%;
 	border: 1px black solid;
 	background-color: ${props => props.bgColour ? props.bgColour : 'white'};
