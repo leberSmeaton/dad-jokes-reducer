@@ -2,7 +2,8 @@ import React, { useEffect, useReducer } from 'react';
 import MessageCard from './MessageCard';
 import ColourChoicePanel from './ColourChoicePanel';
 import { Heading, Button } from './Styled';
-import { getJoke, reducer } from './utils/Services';
+import { getJoke } from './utils/Services';
+import reducer from './utils/Reducer';
 import Background from './images/oldman.jpeg';
 
 const App = () => {
@@ -29,13 +30,19 @@ const App = () => {
     })
   }
 
-  function setTextColour(cardColour){
+  function setCardColour(cardColour){
     dispatch({
       type: 'setCardColour',
       data: cardColour
     })
   }
 
+  // onClick we're setMessage on the joke
+	function handleClick(event) {
+		event.preventDefault()
+		// if the callback function, callback data.joke 
+		getJoke(joke => setMessage(joke))
+	}
 
   useEffect(() => {
     console.log("I'm in useEffect.")
