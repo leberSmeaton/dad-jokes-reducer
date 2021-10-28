@@ -3,7 +3,7 @@ import MessageCard from './MessageCard';
 import ColourChoicePanel from './ColourChoicePanel';
 import { Heading, Button } from './Styled';
 import { getJoke } from './utils/Services';
-import reducer from './utils/Reducer';
+import { reducer } from './utils/Reducer';
 import Background from './images/oldman.jpeg';
 
 const App = () => {
