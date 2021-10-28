@@ -31,7 +31,7 @@ export const CenteredRow = styled.div `
 	display: flex;
 	justify-content: center;
 	padding: 10px 0;
-	font-size: 14px;
+	font-size: 1em;
 `
 export const Button = styled.button `	
 	text-align: center;

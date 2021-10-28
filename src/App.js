@@ -53,6 +53,8 @@ const App = () => {
     <div style={{
 			backgroundSize: 'cover', 
 			borderRadius: "50px",
+      height: "100%",
+      width: "auto",
 			backgroundImage: `url(${Background})`}}>
 
 			<Heading>Colour Tester</Heading>
